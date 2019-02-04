@@ -1,0 +1,8 @@
+#nslookup 10.51.1.253
+#
+#Server:		10.51.1.253
+#Address:	10.51.1.253#53
+#253.1.51.10.in-addr.arpa coresponds to Reverse DNS
+#name = ns1.unit.ua
+#ns1 coresponds to name space DNS server
+#Wich results in our server been "Aplication server (DNS || DHCP)" type

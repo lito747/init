@@ -1,0 +1,2 @@
+#!/bin/sh
+ifconfig en1 | grep 'ether ' | grep -oE "([0-9a-f]{1,2}\:){5}[0-9a-f]{1,2} "

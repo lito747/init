@@ -1,0 +1,12 @@
+#!/bin/sh
+crontab -l > tmp
+echo "0 0 * * * \
+	s1=\"\$(md5sum /etc/crontab | awk '{ print \$1 }')\" && \
+	s2=\"\$(md5sum /etc/crontab.log | awk '{ print \$1 }')\" && \
+	if [ '\$s1' != '\$s2' ] ; \
+	then \
+		cp /etc/crontab /etc/crontab.log && \
+		echo 'Crontab updated' | mail -s '/etc/crontab updated' root  \
+	fi" >> tmp
+crontab tmp
+rm tmp

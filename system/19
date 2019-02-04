@@ -1,0 +1,1 @@
+sudo iptablets -A INPUT -j DROP

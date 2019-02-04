@@ -1,0 +1,4 @@
+#Enter comand ssh-keygen
+#as part of outpyt you will find this pathes:
+#/home/user/.ssh/id_rsa == privet identifier/key
+#/home/user/.ssh/id_rsa.pub == public key

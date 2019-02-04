@@ -1,0 +1,3 @@
+#find information about adres "slash16.org" via whois
+#grep Name Server lines which corespondes witho our task
+whois slash16.org | grep "Name Server"
